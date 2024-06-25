@@ -10,7 +10,7 @@ type Props = {
     initialImageUrl: string;
   };
 
-const IndexPage: NextPage = ({ initialImageUrl }) => {
+const IndexPage: NextPage = ({ initialImageUrl }: Props) => {
   const [imageUrl, setImageUrl] = useState(initialImageUrl)
   const [loading, setLoading] = useState(false)
 
